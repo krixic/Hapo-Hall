@@ -1,0 +1,26 @@
+.separator {
+  text-align: center;
+  overflow: hidden;
+  font-size: 32px;
+}
+
+.separator::before,
+.separator::after {
+  background-color: #333138;
+  content: "";
+  display: inline-block;
+  height: 3px;
+  position: relative;
+  vertical-align: middle;
+  width: 40%;
+}
+
+.separator:before {
+  right: 30px;
+  margin-left: -50%;
+}
+
+.separator:after {
+  left: 30px;
+  margin-right: -50%;
+}

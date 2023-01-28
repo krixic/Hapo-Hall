@@ -1,0 +1,38 @@
+.dropdown {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  width: 100%;
+  align-items: center;
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.tab {
+  flex: 1;
+  background-color: #57565d;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5px;
+  border-image: linear-gradient(to right, #8080ff, #6e6ef3) 1;
+  border-image-slice: 1;
+  border-bottom: 3px solid;
+  transition: 200ms ease-in-out;
+  user-select: none;
+}
+
+.tab:hover {
+  box-shadow: 0px 0px 40px 3px rgba(255, 255, 255, 0.1);
+}
+
+.selected-link {
+  background-image: linear-gradient(to bottom right, #7b7d81, #bdbfc5);
+}
+.normal-link {
+  background-color: #57565d;
+}

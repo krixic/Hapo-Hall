@@ -1,0 +1,27 @@
+.home-title {
+  font-size: 64px;
+  margin: 64px 64px 0 64px;
+  font-weight: bold;
+}
+
+.banner {
+  width: 60%;
+}
+
+.home-subtitle {
+  font-size: 32px;
+  margin: 0 64px 50px;
+  font-style: italic;
+}
+
+.home-heading {
+  font-size: 24px;
+  margin: 0 64px 50px;
+  color: #aaa;
+}
+
+@media screen and (max-width: 786px) {
+  .banner {
+    width: 90%;
+  }
+}
