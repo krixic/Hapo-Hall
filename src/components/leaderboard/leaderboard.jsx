@@ -1,6 +1,9 @@
 import React, { useState, useRef } from "react";
 import "./leaderboard.css";
 import "../game-selector/game-selector.css";
+import { score } from "./score";
+
+console.log(score(25));
 
 import {
   celestelevels,
