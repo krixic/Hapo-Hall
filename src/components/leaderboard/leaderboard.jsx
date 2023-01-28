@@ -56,6 +56,7 @@ export const Leaderboard = () => {
             onClick={() => {
               setCurrentArray(key);
               setSelectedLink(key.slice(0, -6));
+              setActiveButtonIndex(0);
             }}
           >
             {key.slice(0, -6).toUpperCase()}
@@ -81,12 +82,11 @@ export const Leaderboard = () => {
             </tr>
           ))}
         </table>
+
         <div className="user-info">
-          <div className="user-info-placement">
-            {placementRef.current.textContent}
-          </div>
+          <div className="user-info-placement">#{activeButtonIndex + 1}</div>
           <div className="user-info-title">
-            {usernameRef.current.textContent}
+            {getUniqueUsers(allLevels[currentArray])[activeButtonIndex]}
           </div>
         </div>
       </div>
