@@ -1,9 +1,7 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import "./leaderboard.css";
 import "../game-selector/game-selector.css";
-import { score } from "./score";
-
-console.log(score(25));
+import { getScore } from "./score";
 
 import {
   celestelevels,
@@ -14,9 +12,26 @@ import {
   l4d2levels,
 } from "../../data/levels-data";
 
+function getScoreByUser(array, username) {
+  let userScores = [];
+  let totalScore = 0;
+
+  Object.values(array).forEach((level, index) => {
+    level.completions.forEach((completion) => {
+      if (completion.user === username) {
+        let score = getScore(index);
+        userScores.push(score);
+        totalScore += parseFloat(score);
+      }
+    });
+  });
+
+  return [userScores, totalScore];
+}
+
 export const Leaderboard = () => {
-  const [selectedLink, setSelectedLink] = useState("gd");
-  const [currentArray, setCurrentArray] = useState("gdlevels");
+  const [selectedLink, setSelectedLink] = useState("celeste");
+  const [currentArray, setCurrentArray] = useState("celestelevels");
   const [activeButtonIndex, setActiveButtonIndex] = useState(0);
 
   const allLevels = {
@@ -41,9 +56,6 @@ export const Leaderboard = () => {
 
     return uniqueUsers;
   };
-
-  const placementRef = useRef(null);
-  const usernameRef = useRef(null);
 
   return (
     <div>
@@ -70,12 +82,9 @@ export const Leaderboard = () => {
         <table className="user-list">
           {getUniqueUsers(allLevels[currentArray]).map((user, index) => (
             <tr className="user-list-row">
-              <td ref={placementRef} className="user-placement">{`#${
-                index + 1
-              }`}</td>
+              <td className="user-placement">{`#${index + 1}`}</td>
               <td className="username">
                 <button
-                  ref={usernameRef}
                   className={activeButtonIndex === index && "active-button"}
                   onClick={() => setActiveButtonIndex(index)}
                 >
@@ -87,9 +96,19 @@ export const Leaderboard = () => {
         </table>
 
         <div className="user-info">
-          <div className="user-info-placement">#{activeButtonIndex + 1}</div>
-          <div className="user-info-title">
-            {getUniqueUsers(allLevels[currentArray])[activeButtonIndex]}
+          <div className="user-info-heading">
+            <div className="user-info-placement">#{activeButtonIndex + 1}</div>
+            <div className="user-info-title">
+              {getUniqueUsers(allLevels[currentArray])[activeButtonIndex]}
+            </div>
+          </div>
+          <div className="user-info-score">
+            {
+              getScoreByUser(
+                allLevels[currentArray],
+                getUniqueUsers(allLevels[currentArray])[activeButtonIndex]
+              )[1]
+            }
           </div>
         </div>
       </div>

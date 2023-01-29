@@ -2,7 +2,7 @@ export const celestelevels = [
   {
     completions: [
       {
-        user: "Krixical",
+        user: "asdasda",
         link: "https://www.youtube.com/watch?v=OpUh77FY0t4",
       },
       {
@@ -17,7 +17,37 @@ export const celestelevels = [
   {
     completions: [
       {
+        user: "asdasdasda",
+        link: "https://www.youtube.com/watch?v=OpUh77FY0t4",
+      },
+      {
+        user: "Flamguard",
+        link: "https://www.youtube.com/watch?v=gTKeB8BnzPY",
+      },
+    ],
+    title: "not poophed",
+    author: "Cyril",
+    vid: "https://www.youtube.com/watch?v=VVg_51Pmtos",
+  },
+  {
+    completions: [
+      {
         user: "Krixical",
+        link: "https://www.youtube.com/watch?v=OpUh77FY0t4",
+      },
+      {
+        user: "Flamguard",
+        link: "https://www.youtube.com/watch?v=gTKeB8BnzPY",
+      },
+    ],
+    title: "poophed",
+    author: "Cyril",
+    vid: "https://www.youtube.com/watch?v=VVg_51Pmtos",
+  },
+  {
+    completions: [
+      {
+        user: "sbtthsbhrt",
         link: "https://www.youtube.com/watch?v=OpUh77FY0t4",
       },
       {
@@ -47,37 +77,7 @@ export const celestelevels = [
   {
     completions: [
       {
-        user: "Krixical",
-        link: "https://www.youtube.com/watch?v=OpUh77FY0t4",
-      },
-      {
-        user: "Flamguard",
-        link: "https://www.youtube.com/watch?v=gTKeB8BnzPY",
-      },
-    ],
-    title: "Whatever",
-    author: "Cyril",
-    vid: "https://www.youtube.com/watch?v=VVg_51Pmtos",
-  },
-  {
-    completions: [
-      {
-        user: "Krixical",
-        link: "https://www.youtube.com/watch?v=OpUh77FY0t4",
-      },
-      {
-        user: "Flamguard",
-        link: "https://www.youtube.com/watch?v=gTKeB8BnzPY",
-      },
-    ],
-    title: "Whatever",
-    author: "Cyril",
-    vid: "https://www.youtube.com/watch?v=VVg_51Pmtos",
-  },
-  {
-    completions: [
-      {
-        user: "Krixical",
+        user: "ffffffffff",
         link: "https://www.youtube.com/watch?v=OpUh77FY0t4",
       },
       {
