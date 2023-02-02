@@ -41,5 +41,5 @@
 .hapo-logo {
   margin-left: 16px;
   font-size: 64px;
-  transition: 300ms ease-in-out;
+  transition: 300ms all ease;
 }
