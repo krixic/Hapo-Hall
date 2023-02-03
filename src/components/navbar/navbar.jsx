@@ -14,13 +14,14 @@ export const Navbar = () => {
 
   const headerHeight = offset > 1 ? { height: "50px" } : {};
   const logoSize = offset > 1 ? { fontSize: "32px" } : {};
+  const logoText = offset > 1 ? "HP" : "HAPO";
 
   return (
     <nav className="header" style={headerHeight}>
       <strong>
         <h1>
           <Link to="/" className="hapo-logo" style={logoSize}>
-            HAPO
+            {logoText}
           </Link>
         </h1>
       </strong>

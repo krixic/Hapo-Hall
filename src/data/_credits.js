@@ -7,6 +7,6 @@ export const credits = [
   {
     rank: "helper",
     username: "Cyril",
-    social: "#",
+    social: "https://www.youtube.com/@Cyr1i1l",
   },
 ];

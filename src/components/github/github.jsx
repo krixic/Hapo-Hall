@@ -7,9 +7,11 @@ export const Github = () => {
   return (
     <div className="github">
       <div className="github-button-container">
-        <button href="#" className="github-button">
-          GitHub
-          <FontAwesomeIcon className="fa-github" icon={faGithub} />
+        <button className="github-button">
+          <a href="https://github.com/krixic/hapohall">
+            GitHub
+            <FontAwesomeIcon className="fa-github" icon={faGithub} />
+          </a>
         </button>
       </div>
       <div className="github-text-container">
