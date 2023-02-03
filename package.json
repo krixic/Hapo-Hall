@@ -3,7 +3,7 @@
   "private": false,
   "version": "0.0.0",
   "type": "module",
-  "homepage": ".",
+  "homepage": "https://krixic.github.io/hapohall/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
