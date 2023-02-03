@@ -128,14 +128,13 @@ export const Leaderboard = () => {
           </div>
           <div className="user-info-completed">{`Completed (${scoreArray.length})`}</div>
           <div className="user-info-completed-content">
-            {scoreArray.map((score, index) => (
+            {scoreArray.map((score) => (
               <>
                 <div className="user-info-completed-placement">
                   #{getPlacement(score) + 1}
                 </div>
                 <div className="user-info-completed-level">
                   {allLevels[currentArray][getPlacement(score)].title}
-                  {console.log(getPlacement(score))}
                 </div>
 
                 <div className="user-info-completed-score">+{score}</div>

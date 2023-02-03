@@ -1,6 +1,6 @@
 .main {
   display: flex;
-  margin: 50px 400px;
+  margin: 50px 300px;
 }
 
 .user-list-container {
@@ -87,7 +87,7 @@
 
 .user-info-completed-content {
   display: grid;
-  grid-template-columns: 0.2fr 1fr 2fr;
+  grid-template-columns: 0.2fr 2fr 1fr;
   font-size: 24px;
   padding: 8px;
 }
