@@ -33,6 +33,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/hapohall" element={<Home />} />
           {allLevels.map(({ path, data }) => createLevelsPage(path, data))}
           <Route path="/leaderboard" element={<LeaderboardPage />} />
           <Route path="*" element={<Errorpage />} />

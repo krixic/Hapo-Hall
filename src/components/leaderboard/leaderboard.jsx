@@ -126,6 +126,7 @@ export const Leaderboard = () => {
               sortedUserList[activeButtonIndex].user
             )[1].toFixed(scoreDecimal)}
           </div>
+
           <div className="user-info-completed">{`Completed (${scoreArray.length})`}</div>
           <div className="user-info-completed-content">
             {scoreArray.map((score) => (
