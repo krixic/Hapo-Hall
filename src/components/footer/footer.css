@@ -4,6 +4,7 @@
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: cover;
+  background-image: url(../../../public/layered-waves-haikei.svg);
   display: flex;
 }
 
