@@ -20,7 +20,7 @@ export const Navbar = () => {
     <nav className="header" style={headerHeight}>
       <strong>
         <h1>
-          <Link to="/" className="hapo-logo" style={logoSize}>
+          <Link to="/hapohall" className="hapo-logo" style={logoSize}>
             {logoText}
           </Link>
         </h1>
