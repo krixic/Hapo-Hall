@@ -3,16 +3,16 @@ import "./game-selector.css";
 import { Link } from "react-router-dom";
 
 export const links = [
+  "celeste",
+  "devil-daggers",
   "gd",
+  "hyper-demon",
   "irl",
   "l4d2",
-  "devil-daggers",
-  "hyper-demon",
-  "celeste",
 ];
 
 export const Gameselector = () => {
-  const [selectedLink, setSelectedLink] = useState("gd");
+  const [selectedLink, setSelectedLink] = useState("celeste");
 
   const handleClick = (link) => {
     setSelectedLink(link);
@@ -29,7 +29,7 @@ export const Gameselector = () => {
             link === selectedLink ? "selected-link" : "normal-link"
           }`}
         >
-          {link.toUpperCase()}
+          {link.toUpperCase().replace(/-/g, "")}
         </Link>
       ))}
     </div>
